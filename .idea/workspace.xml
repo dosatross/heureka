@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f4c8aa3-9004-423d-b91c-1f48f710d2f9" name="Default" comment="" />
+    <list default="true" id="3f4c8aa3-9004-423d-b91c-1f48f710d2f9" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/heureka/Heureka.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Heureka.java" afterPath="$PROJECT_DIR$/src/RouteFinding.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/heureka/AStarSearch$1.class" afterPath="$PROJECT_DIR$/out/production/heureka/AStarSearch$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/heureka/AStarSearch$NodeComparator.class" afterPath="$PROJECT_DIR$/out/production/heureka/AStarSearch$NodeComparator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/heureka/AStarSearch.class" afterPath="$PROJECT_DIR$/out/production/heureka/AStarSearch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/heureka/Edge.class" afterPath="$PROJECT_DIR$/out/production/heureka/Edge.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/heureka/Node.class" afterPath="$PROJECT_DIR$/out/production/heureka/Node.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AStarSearch.java" afterPath="$PROJECT_DIR$/src/AStarSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Edge.java" afterPath="$PROJECT_DIR$/src/Edge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Node.java" afterPath="$PROJECT_DIR$/src/Node.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,16 +24,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="AStarSearch.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AStarSearch.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AStarSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+            <state relative-caret-position="120">
+              <caret line="12" column="79" lean-forward="true" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
               <folding>
-                <element signature="e#0#2546#0" expanded="true" />
+                <element signature="e#0#2911#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#475#481#0" expanded="true" />
-                <element signature="e#589#595#0" expanded="true" />
+                <element signature="e#450#451#0" expanded="true" />
+                <element signature="e#484#485#0" expanded="true" />
+                <element signature="e#767#773#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Edge.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Edge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="25" />
+              <folding>
+                <element signature="e#229#230#0" expanded="true" />
+                <element signature="e#254#255#0" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
+                <element signature="e#343#344#0" expanded="true" />
+                <element signature="e#372#373#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StreetEdge.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/StreetEdge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClauseEdge.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ClauseEdge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -30,33 +82,96 @@
       <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+            <state relative-caret-position="160">
+              <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
               <folding>
-                <element signature="e#704#705#0" expanded="true" />
-                <element signature="e#729#730#0" expanded="true" />
-                <element signature="e#757#758#0" expanded="true" />
-                <element signature="e#781#782#0" expanded="true" />
-                <element signature="e#809#810#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
                 <element signature="e#833#834#0" expanded="true" />
-                <element signature="e#861#862#0" expanded="true" />
-                <element signature="e#885#886#0" expanded="true" />
-                <element signature="e#965#966#0" expanded="true" />
-                <element signature="e#989#990#0" expanded="true" />
-                <element signature="e#1285#1286#0" expanded="true" />
-                <element signature="e#1311#1312#0" expanded="true" />
+                <element signature="e#857#858#0" expanded="true" />
+                <element signature="e#890#891#0" expanded="true" />
+                <element signature="e#921#922#0" expanded="true" />
+                <element signature="e#1046#1047#0" expanded="true" />
+                <element signature="e#1083#1084#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Heureka.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Heureka.java">
+      <file leaf-file-name="ClauseNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ClauseNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1453">
-              <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+            <state relative-caret-position="720">
+              <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
               <folding>
-                <element signature="e#324#330#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#135#136#0" expanded="true" />
+                <element signature="e#162#163#0" expanded="true" />
+                <element signature="e#666#702#0" expanded="true" />
+                <element signature="e#1316#1341#0" expanded="true" />
+                <element signature="e#1506#1531#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RouteFinding.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RouteFinding.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1374">
+              <caret line="137" column="56" lean-forward="false" selection-start-line="137" selection-start-column="51" selection-end-line="137" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#358#387#0" expanded="true" />
+                <element signature="e#443#455#0" expanded="true" />
+                <element signature="e#509#532#0" expanded="true" />
+                <element signature="e#604#627#0" expanded="true" />
+                <element signature="e#699#722#0" expanded="true" />
+                <element signature="e#794#817#0" expanded="true" />
+                <element signature="e#890#913#0" expanded="true" />
+                <element signature="e#985#1008#0" expanded="true" />
+                <element signature="e#1080#1103#0" expanded="true" />
+                <element signature="e#1175#1198#0" expanded="true" />
+                <element signature="e#1271#1294#0" expanded="true" />
+                <element signature="e#1367#1390#0" expanded="true" />
+                <element signature="e#1465#1488#0" expanded="true" />
+                <element signature="e#1563#1586#0" expanded="true" />
+                <element signature="e#1661#1684#0" expanded="true" />
+                <element signature="e#1758#1781#0" expanded="true" />
+                <element signature="e#1855#1878#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Refutation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Refutation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="58" column="65" lean-forward="true" selection-start-line="58" selection-start-column="65" selection-end-line="58" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1165#1190#0" expanded="true" />
+                <element signature="e#1259#1284#0" expanded="true" />
+                <element signature="e#1353#1378#0" expanded="true" />
+                <element signature="e#1447#1472#0" expanded="true" />
+                <element signature="e#1775#1811#0" expanded="true" />
+                <element signature="e#1897#1933#0" expanded="true" />
+                <element signature="e#2019#2055#0" expanded="true" />
+                <element signature="e#2141#2177#0" expanded="true" />
+                <element signature="e#2421#2446#0" expanded="true" />
+                <element signature="e#2556#2592#0" expanded="true" />
+                <element signature="e#2728#2764#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,6 +186,24 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>edge</find>
+      <find>Edge</find>
+      <find>open</find>
+      <find>Coord</find>
+      <find>CoordNode</find>
+      <find>clausenode</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>StreetEdge</replace>
+      <replace>frontier</replace>
+      <replace>Node&lt;Pair&lt;Integer,Integer&gt;&gt;</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -79,19 +212,33 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/RouteFinding.java" />
-        <option value="$PROJECT_DIR$/src/Edge.java" />
-        <option value="$PROJECT_DIR$/src/Node.java" />
         <option value="$PROJECT_DIR$/src/RouteFinder.java" />
-        <option value="$PROJECT_DIR$/src/AStarSearch.java" />
         <option value="$PROJECT_DIR$/src/Heureka.java" />
+        <option value="$PROJECT_DIR$/src/Literal.java" />
+        <option value="$PROJECT_DIR$/src/Clause.java" />
+        <option value="$PROJECT_DIR$/src/StreetEdge.java" />
+        <option value="$PROJECT_DIR$/src/Edge.java" />
+        <option value="$PROJECT_DIR$/src/Problem.java" />
+        <option value="$PROJECT_DIR$/src/InferenceEngine.java" />
+        <option value="$PROJECT_DIR$/src/RefutationProblem.java" />
+        <option value="$PROJECT_DIR$/src/Node.java" />
+        <option value="$PROJECT_DIR$/src/CoordNode.java" />
+        <option value="$PROJECT_DIR$/src/RouteFinding.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Refutation.java" />
+        <option value="$PROJECT_DIR$/src/ClauseNode.java" />
+        <option value="$PROJECT_DIR$/src/AStarSearch.java" />
+        <option value="$PROJECT_DIR$/src/ClauseEdge.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1903" />
-    <option name="width" value="1951" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1906" />
+    <option name="width" value="1948" />
     <option name="height" value="2074" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -108,9 +255,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -128,6 +273,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -150,7 +297,7 @@
   <component name="RunManager" selected="Application.Unnamed">
     <configuration name="Unnamed" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Heureka" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -283,36 +430,64 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
+    <frame x="-16" y="-16" width="3872" height="2092" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918245" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19181034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2512182" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11354167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1015625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32647535" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39978448" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39956686" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39978448" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918245" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2512182" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1015625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32647535" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -321,22 +496,456 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/AStarSearch.java</url>
-          <line>30</line>
+          <url>file://$PROJECT_DIR$/src/Refutation.java</url>
+          <line>13</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Heureka.java">
+    <entry file="file://$PROJECT_DIR$/src/AStarSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#2911#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#767#773#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Edge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RouteFinding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4720">
+          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#358#387#0" expanded="true" />
+            <element signature="e#443#455#0" expanded="true" />
+            <element signature="e#509#532#0" expanded="true" />
+            <element signature="e#604#627#0" expanded="true" />
+            <element signature="e#699#722#0" expanded="true" />
+            <element signature="e#794#817#0" expanded="true" />
+            <element signature="e#890#913#0" expanded="true" />
+            <element signature="e#985#1008#0" expanded="true" />
+            <element signature="e#1080#1103#0" expanded="true" />
+            <element signature="e#1175#1198#0" expanded="true" />
+            <element signature="e#1271#1294#0" expanded="true" />
+            <element signature="e#1367#1390#0" expanded="true" />
+            <element signature="e#1465#1488#0" expanded="true" />
+            <element signature="e#1563#1586#0" expanded="true" />
+            <element signature="e#1661#1684#0" expanded="true" />
+            <element signature="e#1758#1781#0" expanded="true" />
+            <element signature="e#1855#1878#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClauseNode">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Refutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2960">
+          <caret line="76" column="11" lean-forward="true" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1165#1190#0" expanded="true" />
+            <element signature="e#1259#1284#0" expanded="true" />
+            <element signature="e#1353#1378#0" expanded="true" />
+            <element signature="e#1447#1472#0" expanded="true" />
+            <element signature="e#1775#1811#0" expanded="true" />
+            <element signature="e#1897#1933#0" expanded="true" />
+            <element signature="e#2019#2055#0" expanded="true" />
+            <element signature="e#2141#2177#0" expanded="true" />
+            <element signature="e#2421#2446#0" expanded="true" />
+            <element signature="e#2556#2592#0" expanded="true" />
+            <element signature="e#2728#2764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AStarSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#2911#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#767#773#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Edge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RouteFinding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2560">
+          <caret line="64" column="38" lean-forward="false" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#358#387#0" expanded="true" />
+            <element signature="e#443#455#0" expanded="true" />
+            <element signature="e#509#532#0" expanded="true" />
+            <element signature="e#604#627#0" expanded="true" />
+            <element signature="e#699#722#0" expanded="true" />
+            <element signature="e#794#817#0" expanded="true" />
+            <element signature="e#890#913#0" expanded="true" />
+            <element signature="e#985#1008#0" expanded="true" />
+            <element signature="e#1080#1103#0" expanded="true" />
+            <element signature="e#1175#1198#0" expanded="true" />
+            <element signature="e#1271#1294#0" expanded="true" />
+            <element signature="e#1367#1390#0" expanded="true" />
+            <element signature="e#1465#1488#0" expanded="true" />
+            <element signature="e#1563#1586#0" expanded="true" />
+            <element signature="e#1661#1684#0" expanded="true" />
+            <element signature="e#1758#1781#0" expanded="true" />
+            <element signature="e#1855#1878#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding>
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Refutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1165#1190#0" expanded="true" />
+            <element signature="e#1259#1284#0" expanded="true" />
+            <element signature="e#1353#1378#0" expanded="true" />
+            <element signature="e#1447#1472#0" expanded="true" />
+            <element signature="e#1775#1811#0" expanded="true" />
+            <element signature="e#1897#1933#0" expanded="true" />
+            <element signature="e#2019#2055#0" expanded="true" />
+            <element signature="e#2141#2177#0" expanded="true" />
+            <element signature="e#2421#2446#0" expanded="true" />
+            <element signature="e#2556#2592#0" expanded="true" />
+            <element signature="e#2728#2764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AStarSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#2911#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#767#773#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1480">
+          <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Edge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RouteFinding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2600">
+          <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#358#387#0" expanded="true" />
+            <element signature="e#443#455#0" expanded="true" />
+            <element signature="e#509#532#0" expanded="true" />
+            <element signature="e#604#627#0" expanded="true" />
+            <element signature="e#699#722#0" expanded="true" />
+            <element signature="e#794#817#0" expanded="true" />
+            <element signature="e#890#913#0" expanded="true" />
+            <element signature="e#985#1008#0" expanded="true" />
+            <element signature="e#1080#1103#0" expanded="true" />
+            <element signature="e#1175#1198#0" expanded="true" />
+            <element signature="e#1271#1294#0" expanded="true" />
+            <element signature="e#1367#1390#0" expanded="true" />
+            <element signature="e#1465#1488#0" expanded="true" />
+            <element signature="e#1563#1586#0" expanded="true" />
+            <element signature="e#1661#1684#0" expanded="true" />
+            <element signature="e#1758#1781#0" expanded="true" />
+            <element signature="e#1855#1878#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AStarSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#2911#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#767#773#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Edge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1480">
+          <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RouteFinding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2600">
+          <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#358#387#0" expanded="true" />
+            <element signature="e#443#455#0" expanded="true" />
+            <element signature="e#509#532#0" expanded="true" />
+            <element signature="e#604#627#0" expanded="true" />
+            <element signature="e#699#722#0" expanded="true" />
+            <element signature="e#794#817#0" expanded="true" />
+            <element signature="e#890#913#0" expanded="true" />
+            <element signature="e#985#1008#0" expanded="true" />
+            <element signature="e#1080#1103#0" expanded="true" />
+            <element signature="e#1175#1198#0" expanded="true" />
+            <element signature="e#1271#1294#0" expanded="true" />
+            <element signature="e#1367#1390#0" expanded="true" />
+            <element signature="e#1465#1488#0" expanded="true" />
+            <element signature="e#1563#1586#0" expanded="true" />
+            <element signature="e#1661#1684#0" expanded="true" />
+            <element signature="e#1758#1781#0" expanded="true" />
+            <element signature="e#1855#1878#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AStarSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#2911#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#767#773#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Edge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1480">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RouteFinding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2600">
+          <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#358#387#0" expanded="true" />
+            <element signature="e#443#455#0" expanded="true" />
+            <element signature="e#509#532#0" expanded="true" />
+            <element signature="e#604#627#0" expanded="true" />
+            <element signature="e#699#722#0" expanded="true" />
+            <element signature="e#794#817#0" expanded="true" />
+            <element signature="e#890#913#0" expanded="true" />
+            <element signature="e#985#1008#0" expanded="true" />
+            <element signature="e#1080#1103#0" expanded="true" />
+            <element signature="e#1175#1198#0" expanded="true" />
+            <element signature="e#1271#1294#0" expanded="true" />
+            <element signature="e#1367#1390#0" expanded="true" />
+            <element signature="e#1465#1488#0" expanded="true" />
+            <element signature="e#1563#1586#0" expanded="true" />
+            <element signature="e#1661#1684#0" expanded="true" />
+            <element signature="e#1758#1781#0" expanded="true" />
+            <element signature="e#1855#1878#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RouteFinding.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#358#387#0" expanded="true" />
+            <element signature="e#443#455#0" expanded="true" />
+            <element signature="e#509#532#0" expanded="true" />
+            <element signature="e#604#627#0" expanded="true" />
+            <element signature="e#699#722#0" expanded="true" />
+            <element signature="e#794#817#0" expanded="true" />
+            <element signature="e#890#913#0" expanded="true" />
+            <element signature="e#985#1008#0" expanded="true" />
+            <element signature="e#1080#1103#0" expanded="true" />
+            <element signature="e#1175#1198#0" expanded="true" />
+            <element signature="e#1271#1294#0" expanded="true" />
+            <element signature="e#1367#1390#0" expanded="true" />
+            <element signature="e#1465#1488#0" expanded="true" />
+            <element signature="e#1563#1586#0" expanded="true" />
+            <element signature="e#1661#1684#0" expanded="true" />
+            <element signature="e#1758#1781#0" expanded="true" />
+            <element signature="e#1855#1878#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -345,28 +954,41 @@
         <state relative-caret-position="920">
           <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
             <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#965#966#0" expanded="true" />
-            <element signature="e#989#990#0" expanded="true" />
-            <element signature="e#1285#1286#0" expanded="true" />
-            <element signature="e#1311#1312#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Heureka.java">
+    <entry file="file://$PROJECT_DIR$/src/RouteFinding.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
           <folding>
-            <element signature="e#324#330#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#358#387#0" expanded="true" />
+            <element signature="e#443#455#0" expanded="true" />
+            <element signature="e#509#532#0" expanded="true" />
+            <element signature="e#604#627#0" expanded="true" />
+            <element signature="e#699#722#0" expanded="true" />
+            <element signature="e#794#817#0" expanded="true" />
+            <element signature="e#890#913#0" expanded="true" />
+            <element signature="e#985#1008#0" expanded="true" />
+            <element signature="e#1080#1103#0" expanded="true" />
+            <element signature="e#1175#1198#0" expanded="true" />
+            <element signature="e#1271#1294#0" expanded="true" />
+            <element signature="e#1367#1390#0" expanded="true" />
+            <element signature="e#1465#1488#0" expanded="true" />
+            <element signature="e#1563#1586#0" expanded="true" />
+            <element signature="e#1661#1684#0" expanded="true" />
+            <element signature="e#1758#1781#0" expanded="true" />
+            <element signature="e#1855#1878#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -376,72 +998,206 @@
         <state relative-caret-position="600">
           <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
-            <element signature="e#0#2546#0" expanded="true" />
+            <element signature="e#0#2911#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#475#481#0" expanded="true" />
-            <element signature="e#589#595#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#767#773#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Edge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Heureka.java">
+    <entry file="file://$PROJECT_DIR$/src/RouteFinding.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5320">
           <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
           <folding>
-            <element signature="e#324#330#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#358#387#0" expanded="true" />
+            <element signature="e#443#455#0" expanded="true" />
+            <element signature="e#509#532#0" expanded="true" />
+            <element signature="e#604#627#0" expanded="true" />
+            <element signature="e#699#722#0" expanded="true" />
+            <element signature="e#794#817#0" expanded="true" />
+            <element signature="e#890#913#0" expanded="true" />
+            <element signature="e#985#1008#0" expanded="true" />
+            <element signature="e#1080#1103#0" expanded="true" />
+            <element signature="e#1175#1198#0" expanded="true" />
+            <element signature="e#1271#1294#0" expanded="true" />
+            <element signature="e#1367#1390#0" expanded="true" />
+            <element signature="e#1465#1488#0" expanded="true" />
+            <element signature="e#1563#1586#0" expanded="true" />
+            <element signature="e#1661#1684#0" expanded="true" />
+            <element signature="e#1758#1781#0" expanded="true" />
+            <element signature="e#1855#1878#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Literal.java" />
+    <entry file="file://$PROJECT_DIR$/src/ClauseNode">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RefutationProblem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoordNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        <state relative-caret-position="160">
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           <folding>
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
             <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#965#966#0" expanded="true" />
-            <element signature="e#989#990#0" expanded="true" />
-            <element signature="e#1285#1286#0" expanded="true" />
-            <element signature="e#1311#1312#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Heureka.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1453">
-          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        <state relative-caret-position="280">
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Refutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="58" column="65" lean-forward="true" selection-start-line="58" selection-start-column="65" selection-end-line="58" selection-end-column="65" />
           <folding>
-            <element signature="e#324#330#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1165#1190#0" expanded="true" />
+            <element signature="e#1259#1284#0" expanded="true" />
+            <element signature="e#1353#1378#0" expanded="true" />
+            <element signature="e#1447#1472#0" expanded="true" />
+            <element signature="e#1775#1811#0" expanded="true" />
+            <element signature="e#1897#1933#0" expanded="true" />
+            <element signature="e#2019#2055#0" expanded="true" />
+            <element signature="e#2141#2177#0" expanded="true" />
+            <element signature="e#2421#2446#0" expanded="true" />
+            <element signature="e#2556#2592#0" expanded="true" />
+            <element signature="e#2728#2764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RouteFinding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1374">
+          <caret line="137" column="56" lean-forward="false" selection-start-line="137" selection-start-column="51" selection-end-line="137" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#358#387#0" expanded="true" />
+            <element signature="e#443#455#0" expanded="true" />
+            <element signature="e#509#532#0" expanded="true" />
+            <element signature="e#604#627#0" expanded="true" />
+            <element signature="e#699#722#0" expanded="true" />
+            <element signature="e#794#817#0" expanded="true" />
+            <element signature="e#890#913#0" expanded="true" />
+            <element signature="e#985#1008#0" expanded="true" />
+            <element signature="e#1080#1103#0" expanded="true" />
+            <element signature="e#1175#1198#0" expanded="true" />
+            <element signature="e#1271#1294#0" expanded="true" />
+            <element signature="e#1367#1390#0" expanded="true" />
+            <element signature="e#1465#1488#0" expanded="true" />
+            <element signature="e#1563#1586#0" expanded="true" />
+            <element signature="e#1661#1684#0" expanded="true" />
+            <element signature="e#1758#1781#0" expanded="true" />
+            <element signature="e#1855#1878#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClauseNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#135#136#0" expanded="true" />
+            <element signature="e#162#163#0" expanded="true" />
+            <element signature="e#666#702#0" expanded="true" />
+            <element signature="e#1316#1341#0" expanded="true" />
+            <element signature="e#1506#1531#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AStarSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        <state relative-caret-position="120">
+          <caret line="12" column="79" lean-forward="true" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
           <folding>
-            <element signature="e#0#2546#0" expanded="true" />
+            <element signature="e#0#2911#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#475#481#0" expanded="true" />
-            <element signature="e#589#595#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#767#773#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Edge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="25" />
+          <folding>
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StreetEdge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClauseEdge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

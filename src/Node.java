@@ -1,41 +1,36 @@
-public class Node {
+public class Node<T> {
 
-    //data
-    private final double x;
-    private final double y;
     private final int id;
+
+    protected T data;
 
     //cost so far from start to current (initially, score from start to start is zero)
     private double g = Double.POSITIVE_INFINITY;
 
-    //estimated cost from current to goal; euclidean distance for route finding
+    //estimated cost from current to goal
     private double h;
 
     //f = g + h (initially h for start)
     private double f;
 
-    //previous = previous node from current in optimal solution
+    //previous node/edge from current in optimal solution
     private Node previous;
+    private Edge previousEdge;
 
     //neighbours
     private Edge[] neighbourEdges;
 
-    public Node(int id, double x, double y) {
+    public Node(int id,T data) {
         this.id = id;
-        this.x = x;
-        this.y = y;
+        this.data = data;
+    }
+
+    public T getData() {
+        return data;
     }
 
     public double getId() {
         return id;
-    }
-
-    public double getX() {
-        return x;
-    }
-
-    public double getY() {
-        return y;
     }
 
     public double getG() {
@@ -54,7 +49,11 @@ public class Node {
         return previous;
     }
 
-    public Edge[] getNeighbourEdges() {
+    public Edge getPreviousEdge() {
+        return previousEdge;
+    }
+
+    public Edge[] getNeighbourEdges(Object extra) {
         return neighbourEdges;
     }
 
@@ -72,6 +71,10 @@ public class Node {
 
     public void setPrevious(Node previous) {
         this.previous = previous;
+    }
+
+    public void setPreviousEdge(Edge previousEdge) {
+        this.previousEdge = previousEdge;
     }
 
     public void setNeighbourEdges(Edge[] neighbourEdges) {

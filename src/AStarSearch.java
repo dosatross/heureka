@@ -10,11 +10,19 @@ import java.util.HashSet;
 
 public class AStarSearch {
 
-    public ArrayList<Node> findPath(Node start,Node goal) {
+    Object extra; //extra problem information - used for dynamic graph building
 
-        //nodes discovered but not expanded
-        PriorityQueue<Node> open = new PriorityQueue<Node>(11, new NodeComparator()); ; //frontier
-        //expanded nodes
+    AStarSearch(){}
+
+    AStarSearch(Object extra) {
+        this.extra = extra;
+    }
+
+    public ArrayList<Edge> findPath(Node start,Node goal) {
+
+        //frontier - nodes discovered but not expanded
+        PriorityQueue<Node> open = new PriorityQueue<Node>(11, new NodeComparator());
+        //explored - expanded nodes
         HashSet<Node> closed = new HashSet<Node>();
 
         //init source node
@@ -24,15 +32,15 @@ public class AStarSearch {
         open.add(start); //add source node to queue
 
         while(!open.isEmpty()) {
-
-            Node current = open.poll();
+            Node current = open.poll(); //pop - choose the lowest cost node from frontier
             closed.add(current);
 
-            if(current.equals(goal)) {
+            //goal test
+            if(current.getData().equals(goal.getData())) {
                 return reconstructPath(current);
             }
 
-            for(Edge edge : current.getNeighbourEdges()) { //for each neighbour
+            for(Edge edge : current.getNeighbourEdges(extra)) { //for each neighbour
                 Node neighbour = edge.getTarget();
                 double tentativeG = current.getG() + edge.getCost();
                 double tentativeF = tentativeG + neighbour.getH();
@@ -44,6 +52,7 @@ public class AStarSearch {
                 if (tentativeG < neighbour.getG()) { //node was already discovered and this path costs more
                     //update neighbour attributes
                     neighbour.setPrevious(current);
+                    neighbour.setPreviousEdge(edge);
                     neighbour.setG(tentativeG);
                     neighbour.setF(tentativeF);
 
@@ -70,11 +79,11 @@ public class AStarSearch {
         }
     }
 
-    private ArrayList<Node> reconstructPath(Node current) {
-        ArrayList<Node> path = new ArrayList<Node>() {
+    private ArrayList<Edge> reconstructPath(Node current) {
+        ArrayList<Edge> path = new ArrayList<Edge>() {
         };
-        while (current != null) {
-            path.add(current);
+        while (current.getPreviousEdge() != null) {
+            path.add(current.getPreviousEdge());
             current = current.getPrevious();
         }
         return path;

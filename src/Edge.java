@@ -1,11 +1,16 @@
 
 public class Edge {
-    private final double cost;
+    private final int id;
+    protected double cost;
     private final Node target;
 
-    public Edge(Node target, double h, double l){
+    public Edge(int id, Node target){
+        this.id = id;
         this.target = target;
-        this.cost = Math.sqrt(h*h+l*l);
+    }
+
+    public double getId() {
+        return id;
     }
 
     public double getCost() {
@@ -15,4 +20,6 @@ public class Edge {
     public Node getTarget() {
         return target;
     }
+
+
 }
