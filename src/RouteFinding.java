@@ -15,7 +15,7 @@ public class RouteFinding {
     public void solve() {
 
         ArrayList<Node<Pair<Integer,Integer>>> nodes = new  ArrayList<Node<Pair<Integer,Integer>>>();
-        ArrayList<StreetEdge> edges = new  ArrayList<StreetEdge>();
+        ArrayList<Edge<String>> edges = new  ArrayList<Edge<String>>();
 
         Node<Pair<Integer,Integer>> n1 = new Node<Pair<Integer,Integer>>(1,new Pair<>(10,70));
         Node<Pair<Integer,Integer>> n2 = new Node<Pair<Integer,Integer>>(2,new Pair<>(20,50));
@@ -49,31 +49,31 @@ public class RouteFinding {
         nodes.add(n14);
         nodes.add(n15);
 
-        StreetEdge e1 = new StreetEdge(1,n2,"Vestervoldgade",2,1);
-        StreetEdge e2 = new StreetEdge(2,n4,"Noerrevoldgade",3,1.5);
-        StreetEdge e3 = new StreetEdge(3,n5,"SktPedersStraede",1,2.5);
-        StreetEdge e4 = new StreetEdge(4,n1,"Vestervoldgade",2,1);
-        StreetEdge e5 = new StreetEdge(5,n3,"Vestervoldgade",1.5,1.5);
-        StreetEdge e6 = new StreetEdge(6,n6,"Studiestraede",2,2.5);
-        StreetEdge e7 = new StreetEdge(7,n2,"Vestervoldgade",1.5,1.5);
-        StreetEdge e8 = new StreetEdge(8,n1,"Noerrevoldgade",3,1.5);
-        StreetEdge e9 = new StreetEdge(9,n5,"TeglgaardsStraede",2,1);
-        StreetEdge e10 = new StreetEdge(10,n8,"Noerrevoldgade",2,1);
-        StreetEdge e11 = new StreetEdge(11,n9,"SktPedersStraede",1,1.5);
-        StreetEdge e12 = new StreetEdge(12,n5,"Larsbjoernsstraede",1,1);
-        StreetEdge e13 = new StreetEdge(13,n7,"Larsbjoernsstraede",1.5,1);
-        StreetEdge e14 = new StreetEdge(14,n13,"Studiestraede",1.5,2.5);
-        StreetEdge e15 = new StreetEdge(15,n3,"Vestergade",2,2);
-        StreetEdge e16 = new StreetEdge(16,n4,"Noerrevoldgade",2,1);
-        StreetEdge e17 = new StreetEdge(17,n10,"Noerrevoldgade",3,2.5);
-        StreetEdge e18 = new StreetEdge(18,n8,"LarslejStraede",3,1.5);
-        StreetEdge e19 = new StreetEdge(19,n8,"Noerrevoldgade",3,2.5);
-        StreetEdge e20 = new StreetEdge(20,n11,"Noerregade",3,0);
-        StreetEdge e21 = new StreetEdge(21,n12,"Noerregade",1,0);
-        StreetEdge e22 = new StreetEdge(22,n13,"Noerregade",1.5,1);
-        StreetEdge e23 = new StreetEdge(23,n14,"Noerregade",1.5,1);
-        StreetEdge e24 = new StreetEdge(24,n7,"Vestergade",1.5,2.5);
-        StreetEdge e25 = new StreetEdge(25,n9,"SktPedersStraede",1,1.5);
+        Edge<String> e1 = new Edge<String>(1,"Vestervoldgade",n2,Math.sqrt(2*2+1*1));
+        Edge<String> e2 = new Edge<String>(2,"Noerrevoldgade",n4,Math.sqrt(3*3+1.5*1.5));
+        Edge<String> e3 = new Edge<String>(3,"SktPedersStraede",n5,Math.sqrt(1*1+2.5*2.5));
+        Edge<String> e4 = new Edge<String>(4,"Vestervoldgade",n1,Math.sqrt(2*2+1*1));
+        Edge<String> e5 = new Edge<String>(5,"Vestervoldgade",n3,Math.sqrt(1.5*1.5+1.5*1.5));
+        Edge<String> e6 = new Edge<String>(6,"Studiestraede",n6,Math.sqrt(2*2+2.5*2.5));
+        Edge<String> e7 = new Edge<String>(7,"Vestervoldgade",n2,Math.sqrt(1.5*1.5+1.5*1.5));
+        Edge<String> e8 = new Edge<String>(8,"Noerrevoldgade",n1,Math.sqrt(3*3+1.5*1.5));
+        Edge<String> e9 = new Edge<String>(9,"TeglgaardsStraede",n5,Math.sqrt(2*2+1*1));
+        Edge<String> e10 = new Edge<String>(10,"Noerrevoldgade",n8,Math.sqrt(2*2+1*1));
+        Edge<String> e11 = new Edge<String>(11,"SktPedersStraede",n9,Math.sqrt(1*1+1.5*1.5));
+        Edge<String> e12 = new Edge<String>(12,"Larsbjoernsstraede",n5,Math.sqrt(1*1+1*1));
+        Edge<String> e13 = new Edge<String>(13,"Larsbjoernsstraede",n7,Math.sqrt(1.5*1.5+1*1));
+        Edge<String> e14 = new Edge<String>(14,"Studiestraede",n13,Math.sqrt(1.5*1.5+2.5*2.5));
+        Edge<String> e15 = new Edge<String>(15,"Vestergade",n3,Math.sqrt(2*2+2*2));
+        Edge<String> e16 = new Edge<String>(16,"Noerrevoldgade",n4,Math.sqrt(2*2+1*1));
+        Edge<String> e17 = new Edge<String>(17,"Noerrevoldgade",n10,Math.sqrt(3*3+2.5*2.5));
+        Edge<String> e18 = new Edge<String>(18,"LarslejStraede",n8,Math.sqrt(3*3+1.5*1.5));
+        Edge<String> e19 = new Edge<String>(19,"Noerrevoldgade",n8,Math.sqrt(3*3+2.5*2.5));
+        Edge<String> e20 = new Edge<String>(20,"Noerregade",n11,Math.sqrt(3*3+0*0));
+        Edge<String> e21 = new Edge<String>(21,"Noerregade",n12,Math.sqrt(1*1+0*0));
+        Edge<String> e22 = new Edge<String>(22,"Noerregade",n13,Math.sqrt(1.5*1.5+1*1));
+        Edge<String> e23 = new Edge<String>(23,"Noerregade",n14,Math.sqrt(1.5*1.5+1*1));
+        Edge<String> e24 = new Edge<String>(24,"Vestergade",n7,Math.sqrt(1.5*1.5+2.5*2.5));
+        Edge<String> e25 = new Edge<String>(25,"SktPedersStraede",n9,Math.sqrt(1*1+1.5*1.5));
 
 
         edges.add(e1);
@@ -102,21 +102,21 @@ public class RouteFinding {
         edges.add(e24);
         edges.add(e25);
 
-        n1.setNeighbourEdges( new StreetEdge[] {e1,e2,e3});
-        n2.setNeighbourEdges( new StreetEdge[] {e4,e5,e6});
-        n3.setNeighbourEdges( new StreetEdge[] {e7});
-        n4.setNeighbourEdges( new StreetEdge[] {e8,e9,e10});
-        n5.setNeighbourEdges( new StreetEdge[] {e11});
-        n6.setNeighbourEdges( new StreetEdge[] {e12,e13,e14});
-        n7.setNeighbourEdges( new StreetEdge[] {e15});
-        n8.setNeighbourEdges( new StreetEdge[] {e16,e17});
-        n9.setNeighbourEdges( new StreetEdge[] {e18});
-        n10.setNeighbourEdges( new StreetEdge[] {e19,e20});
-        n11.setNeighbourEdges( new StreetEdge[] {e21});
-        n12.setNeighbourEdges( new StreetEdge[] {e22});
-        n13.setNeighbourEdges( new StreetEdge[] {e23});
-        n14.setNeighbourEdges( new StreetEdge[] {e24});
-        n15.setNeighbourEdges( new StreetEdge[] {e25});
+        n1.setNeighbourEdges( new Edge[] {e1,e2,e3});
+        n2.setNeighbourEdges( new Edge[] {e4,e5,e6});
+        n3.setNeighbourEdges( new Edge[] {e7});
+        n4.setNeighbourEdges( new Edge[] {e8,e9,e10});
+        n5.setNeighbourEdges( new Edge[] {e11});
+        n6.setNeighbourEdges( new Edge[] {e12,e13,e14});
+        n7.setNeighbourEdges( new Edge[] {e15});
+        n8.setNeighbourEdges( new Edge[] {e16,e17});
+        n9.setNeighbourEdges( new Edge[] {e18});
+        n10.setNeighbourEdges( new Edge[] {e19,e20});
+        n11.setNeighbourEdges( new Edge[] {e21});
+        n12.setNeighbourEdges( new Edge[] {e22});
+        n13.setNeighbourEdges( new Edge[] {e23});
+        n14.setNeighbourEdges( new Edge[] {e24});
+        n15.setNeighbourEdges( new Edge[] {e25});
 
         Node<Pair<Integer,Integer>> start =  n8;
         Node<Pair<Integer,Integer>> goal = n6;
@@ -135,7 +135,7 @@ public class RouteFinding {
         ArrayList<Edge> path = astar.findPath(start,goal);
 
         for(Edge edge : path) {
-            System.out.println(edges.get((int)edge.getId()-1).getStreet());
+            System.out.println(edges.get((int)edge.getId()-1).getData());
         }
     }
 }

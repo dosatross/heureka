@@ -1,25 +1,30 @@
 
-public class Edge {
+public class Edge<T> {
     private final int id;
-    protected double cost;
+    private T data;
     private final Node target;
+    protected double cost;
 
-    public Edge(int id, Node target){
+    public Edge(int id, T data, Node target,double cost){
         this.id = id;
+        this.data = data;
         this.target = target;
+        this.cost = cost;
     }
 
     public double getId() {
         return id;
     }
 
-    public double getCost() {
-        return cost;
+    public T getData() {
+        return data;
     }
 
     public Node getTarget() {
         return target;
     }
 
-
+    public double getCost() {
+        return cost;
+    }
 }

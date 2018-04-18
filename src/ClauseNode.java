@@ -3,8 +3,8 @@ import javafx.util.Pair;
 import java.util.ArrayList;
 
 public class ClauseNode<T> extends Node<T> {
-    public ClauseNode(int id, T t) {
-        super(id,t);
+    public ClauseNode(int id, T data) {
+        super(id,data);
     }
 
     @Override
@@ -19,7 +19,7 @@ public class ClauseNode<T> extends Node<T> {
             //resolve and create new clause
             ClauseNode<ArrayList<Pair<Character,Boolean>>> newClauseNode = new ClauseNode<ArrayList<Pair<Character,Boolean>>>(0,resolve((ArrayList<Pair<Character,Boolean>>) data, clause)); //TODO manage ids
             newClauseNode.setH(newClauseNode.getData().size()); //calculate h - size of clause
-            ClauseEdge newClauseEdge = new ClauseEdge(0,newClauseNode,clause); //create new edge
+            Edge<ArrayList<Pair<Character,Boolean>>> newClauseEdge = new Edge<ArrayList<Pair<Character,Boolean>>>(0,clause,newClauseNode,1); //create new edge
             neighbourEdges[i] = newClauseEdge;
         }
         setNeighbourEdges(neighbourEdges);
