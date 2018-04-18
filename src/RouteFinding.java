@@ -4,14 +4,6 @@ import java.util.ArrayList;
 
 public class RouteFinding {
 
-    //INPUT
-    //inital crossing (pair)
-    //goal crossing (pair)
-    //map of streets and coordinates (text file)
-
-    //OUTPUT
-    //route through streets (list of streets)
-
     public void solve() {
 
         ArrayList<Node<Pair<Integer,Integer>>> nodes = new  ArrayList<Node<Pair<Integer,Integer>>>();

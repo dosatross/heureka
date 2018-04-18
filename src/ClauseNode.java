@@ -3,6 +3,7 @@ import javafx.util.Pair;
 import java.util.ArrayList;
 
 public class ClauseNode<T> extends Node<T> {
+
     public ClauseNode(int id, T data) {
         super(id,data);
     }
@@ -10,39 +11,35 @@ public class ClauseNode<T> extends Node<T> {
     @Override
     public Edge[] getNeighbourEdges(Object extra) {
 
-        ArrayList<ArrayList<Pair<Character,Boolean>>> KB = (ArrayList<ArrayList<Pair<Character,Boolean>>>) extra;
-        //input - kb
+        ArrayList<Clause> KB = (ArrayList<Clause>) extra;
 
         Edge[] neighbourEdges = new Edge[KB.size()];
         for (int i = 0; i < KB.size();i++) {
-            ArrayList<Pair<Character,Boolean>> clause = KB.get(i);
+            Clause clause = KB.get(i);
             //resolve and create new clause
-            ClauseNode<ArrayList<Pair<Character,Boolean>>> newClauseNode = new ClauseNode<ArrayList<Pair<Character,Boolean>>>(0,resolve((ArrayList<Pair<Character,Boolean>>) data, clause)); //TODO manage ids
+            ClauseNode<Clause> newClauseNode = new ClauseNode<Clause>(0,resolve((Clause) data, clause)); //TODO manage ids
             newClauseNode.setH(newClauseNode.getData().size()); //calculate h - size of clause
-            Edge<ArrayList<Pair<Character,Boolean>>> newClauseEdge = new Edge<ArrayList<Pair<Character,Boolean>>>(0,clause,newClauseNode,1); //create new edge
+            Edge<Clause> newClauseEdge = new Edge<Clause>(0,clause,newClauseNode,1); //create new edge
             neighbourEdges[i] = newClauseEdge;
         }
         setNeighbourEdges(neighbourEdges);
         return neighbourEdges;
     }
 
-    public ArrayList<Pair<Character,Boolean>> resolve(ArrayList<Pair<Character,Boolean>> c1, ArrayList<Pair<Character,Boolean>> c2) {
-        ArrayList<Pair<Character,Boolean>> newClause = new ArrayList<Pair<Character,Boolean>>();
-        //concat clauses
-        newClause.addAll(c1);
-        newClause.addAll(c2);
+    public Clause resolve(Clause c1, Clause c2) {
+        Clause newClause = new Clause(c1,c2); //create clause out of c1 and c2
 
-        ArrayList<Pair<Character,Boolean>> deleteCandidates = new ArrayList<Pair<Character,Boolean>>();
+        Clause deleteCandidates = new Clause();
 
-        for(Pair<Character,Boolean> literal : newClause) {
-            for(Pair<Character,Boolean> complement : newClause) {
+        for(Pair<Character,Boolean> literal : newClause.getLiterals()) {
+            for(Pair<Character,Boolean> complement : newClause.getLiterals()) {
                 if(literal.getKey() == complement.getKey() && literal.getValue() != complement.getValue()) { //if complements found
-                    deleteCandidates.add(literal);
+                    deleteCandidates.addLiterals(literal);
                 }
             }
         }
 
-        newClause.removeAll(deleteCandidates);
+        newClause.removeLiterals(deleteCandidates); //remove contradicting literals
 
         return newClause;
     }
