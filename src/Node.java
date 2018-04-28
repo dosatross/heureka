@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Node<T> {
 
     private final int id;
@@ -5,24 +9,25 @@ public class Node<T> {
     protected T data;
 
     //cost so far from start to current (initially, score from start to start is zero)
-    private double g = Double.POSITIVE_INFINITY;
+    protected double g = Double.POSITIVE_INFINITY;
 
     //estimated cost from current to goal
-    private double h;
+    protected double h;
 
     //f = g + h (initially h for start)
-    private double f;
+    protected double f;
 
     //previous node/edge from current in optimal solution
-    private Node previous;
-    private Edge previousEdge;
+    protected Node previous;
+    protected Edge previousEdge;
 
     //neighbours
-    private Edge[] neighbourEdges;
+    protected ArrayList<Edge> neighbourEdges;
 
     public Node(int id,T data) {
         this.id = id;
         this.data = data;
+        neighbourEdges = new ArrayList<Edge>();
     }
 
     public T getData() {
@@ -53,7 +58,8 @@ public class Node<T> {
         return previousEdge;
     }
 
-    public Edge[] getNeighbourEdges(Object extra) {
+    //override getNeighbourEdges() for dynamic graph building
+    public ArrayList<Edge> getNeighbourEdges() {
         return neighbourEdges;
     }
 
@@ -77,7 +83,7 @@ public class Node<T> {
         this.previousEdge = previousEdge;
     }
 
-    public void setNeighbourEdges(Edge[] neighbourEdges) {
-        this.neighbourEdges = neighbourEdges;
+    public void setNeighbourEdges(Edge ... edges) {
+        neighbourEdges.addAll(Arrays.asList(edges));
     }
 }

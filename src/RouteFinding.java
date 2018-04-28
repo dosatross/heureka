@@ -1,6 +1,7 @@
 import javafx.util.Pair;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class RouteFinding {
 
@@ -94,21 +95,23 @@ public class RouteFinding {
         edges.add(e24);
         edges.add(e25);
 
-        n1.setNeighbourEdges( new Edge[] {e1,e2,e3});
-        n2.setNeighbourEdges( new Edge[] {e4,e5,e6});
-        n3.setNeighbourEdges( new Edge[] {e7});
-        n4.setNeighbourEdges( new Edge[] {e8,e9,e10});
-        n5.setNeighbourEdges( new Edge[] {e11});
-        n6.setNeighbourEdges( new Edge[] {e12,e13,e14});
-        n7.setNeighbourEdges( new Edge[] {e15});
-        n8.setNeighbourEdges( new Edge[] {e16,e17});
-        n9.setNeighbourEdges( new Edge[] {e18});
-        n10.setNeighbourEdges( new Edge[] {e19,e20});
-        n11.setNeighbourEdges( new Edge[] {e21});
-        n12.setNeighbourEdges( new Edge[] {e22});
-        n13.setNeighbourEdges( new Edge[] {e23});
-        n14.setNeighbourEdges( new Edge[] {e24});
-        n15.setNeighbourEdges( new Edge[] {e25});
+
+
+        n1.setNeighbourEdges(e1,e2,e3);
+        n2.setNeighbourEdges(e4,e5,e6);
+        n3.setNeighbourEdges(e7);
+        n4.setNeighbourEdges(e8,e9,e10);
+        n5.setNeighbourEdges(e11);
+        n6.setNeighbourEdges(e12,e13,e14);
+        n7.setNeighbourEdges(e15);
+        n8.setNeighbourEdges(e16,e17);
+        n9.setNeighbourEdges(e18);
+        n10.setNeighbourEdges(e19,e20);
+        n11.setNeighbourEdges(e21);
+        n12.setNeighbourEdges(e22);
+        n13.setNeighbourEdges(e23);
+        n14.setNeighbourEdges(e24);
+        n15.setNeighbourEdges(e25);
 
         Node<Pair<Integer,Integer>> start =  n8;
         Node<Pair<Integer,Integer>> goal = n6;
@@ -126,6 +129,11 @@ public class RouteFinding {
         AStarSearch astar = new AStarSearch();
         ArrayList<Edge> path = astar.findPath(start,goal);
 
+        if(path == null) {
+            System.out.println("Route not found!");
+            return;
+        }
+        System.out.println("Route found! Path starting from destination: ");
         for(Edge edge : path) {
             System.out.println(edges.get((int)edge.getId()-1).getData());
         }

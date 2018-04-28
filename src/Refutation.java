@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Refutation {
 
-    private static ArrayList<Clause> KB;
+    private ArrayList<Clause> KB;
 
     public void solve() {
         Pair<Character,Boolean> a = new Pair<>('a',true);
@@ -30,15 +30,22 @@ public class Refutation {
         KB.add(c2);
         KB.add(c3);
 
-        Clause startList = new Clause(anot);
-        ClauseNode<Clause> start = new ClauseNode<Clause>(0,startList); //starting clause - negation of proposition
-        ClauseNode<Clause> goal =  new ClauseNode<Clause>(0,new Clause()); //empty clause
+        Clause startList = new Clause(anot); //negation of conjecture
+        KB.add(startList);
+        ClauseNode<Clause> start = new ClauseNode<Clause>(0,startList,KB); //starting clause - negation of proposition
+        ClauseNode<Clause> goal =  new ClauseNode<Clause>(0,new Clause(),null); //empty clause
 
-        AStarSearch astar = new AStarSearch(KB);
+        AStarSearch astar = new AStarSearch();
         ArrayList<Edge> path = astar.findPath(start,goal);
 
         //print path
         Clause tempClause;
+        if(path == null) {
+            System.out.println("Contradiction not found! Conjecture unproved!");
+            return;
+        }
+        System.out.println("Contradiction found! Conjecture proved!");
+        System.out.println("Path starting from conclusion: ");
         for(Edge edge : path) {
             int i = 0;
             tempClause = (Clause) edge.getData();
@@ -51,6 +58,4 @@ public class Refutation {
             System.out.println();
         }
     }
-
-
 }

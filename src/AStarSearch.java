@@ -10,13 +10,7 @@ import java.util.HashSet;
 
 public class AStarSearch {
 
-    Object extra; //extra problem information - used for dynamic graph building
-
     AStarSearch(){}
-
-    AStarSearch(Object extra) {
-        this.extra = extra;
-    }
 
     public ArrayList<Edge> findPath(Node start,Node goal) {
 
@@ -40,7 +34,8 @@ public class AStarSearch {
                 return reconstructPath(current);
             }
 
-            for(Edge edge : current.getNeighbourEdges(extra)) { //for each neighbour
+
+            for(Edge edge : (ArrayList<Edge>) current.getNeighbourEdges()) { //for each neighbour
                 Node neighbour = edge.getTarget();
                 double tentativeG = current.getG() + edge.getCost();
                 double tentativeF = tentativeG + neighbour.getH();

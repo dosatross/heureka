@@ -4,25 +4,28 @@ import java.util.ArrayList;
 
 public class ClauseNode<T> extends Node<T> {
 
-    public ClauseNode(int id, T data) {
+    private ArrayList<Clause> KB;
+
+    public ClauseNode(int id, T data, ArrayList<Clause> KB) {
         super(id,data);
+        this.KB = KB;
     }
 
     @Override
-    public Edge[] getNeighbourEdges(Object extra) {
-
-        ArrayList<Clause> KB = (ArrayList<Clause>) extra;
-
-        Edge[] neighbourEdges = new Edge[KB.size()];
+    public ArrayList<Edge> getNeighbourEdges() {
         for (int i = 0; i < KB.size();i++) {
             Clause clause = KB.get(i);
             //resolve and create new clause
-            ClauseNode<Clause> newClauseNode = new ClauseNode<Clause>(0,resolve((Clause) data, clause)); //TODO manage ids
-            newClauseNode.setH(newClauseNode.getData().size()); //calculate h - size of clause
-            Edge<Clause> newClauseEdge = new Edge<Clause>(0,clause,newClauseNode,1); //create new edge
-            neighbourEdges[i] = newClauseEdge;
+            Clause resolvent = resolve((Clause) data, clause);
+            if(resolvent != null) { //if only one contradiction found create resolvent node
+                ArrayList<Clause> newKB = KB;
+                newKB.add(resolvent);
+                ClauseNode<Clause> resolventNode = new ClauseNode<Clause>(0,resolvent,newKB); //TODO manage ids
+                resolventNode.setH(resolventNode.getData().size()); //calculate h - size of clause
+                Edge<Clause> resolventEdge = new Edge<Clause>(0,clause,resolventNode,1); //create new edge
+                neighbourEdges.add(resolventEdge);
+            }
         }
-        setNeighbourEdges(neighbourEdges);
         return neighbourEdges;
     }
 
@@ -37,6 +40,10 @@ public class ClauseNode<T> extends Node<T> {
                     deleteCandidates.addLiterals(literal);
                 }
             }
+        }
+
+        if (deleteCandidates.size() != 2) { //if more than one or no contradictions are found do not resolve
+            return null;
         }
 
         newClause.removeLiterals(deleteCandidates); //remove contradicting literals
