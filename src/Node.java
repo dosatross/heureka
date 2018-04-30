@@ -1,10 +1,9 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class Node<T> {
 
-    private final int id;
+    protected final int id;
 
     protected T data;
 

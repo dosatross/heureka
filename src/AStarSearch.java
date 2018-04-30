@@ -1,7 +1,8 @@
-
+//References:
 //https://en.wikipedia.org/wiki/A*_search_algorithm
 //https://gist.github.com/raymondchua/8064159
 //https://codereview.stackexchange.com/questions/38376/a-search-algorithm
+//https://github.com/aimacode/aima-pseudocode/blob/master/md/Uniform-Cost-Search.md
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -9,8 +10,6 @@ import java.util.PriorityQueue;
 import java.util.HashSet;
 
 public class AStarSearch {
-
-    AStarSearch(){}
 
     public ArrayList<Edge> findPath(Node start,Node goal) {
 
@@ -33,7 +32,6 @@ public class AStarSearch {
             if(current.getData().equals(goal.getData())) {
                 return reconstructPath(current);
             }
-
 
             for(Edge edge : (ArrayList<Edge>) current.getNeighbourEdges()) { //for each neighbour
                 Node neighbour = edge.getTarget();
@@ -84,7 +82,3 @@ public class AStarSearch {
         return path;
     }
 }
-
-
-
-

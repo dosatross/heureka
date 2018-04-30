@@ -1,7 +1,6 @@
 import javafx.util.Pair;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class RouteFinding {
 
@@ -96,7 +95,6 @@ public class RouteFinding {
         edges.add(e25);
 
 
-
         n1.setNeighbourEdges(e1,e2,e3);
         n2.setNeighbourEdges(e4,e5,e6);
         n3.setNeighbourEdges(e7);
@@ -113,7 +111,7 @@ public class RouteFinding {
         n14.setNeighbourEdges(e24);
         n15.setNeighbourEdges(e25);
 
-        Node<Pair<Integer,Integer>> start =  n8;
+        Node<Pair<Integer,Integer>> start =  n9;
         Node<Pair<Integer,Integer>> goal = n6;
 
         //calculate estimated cost from current to goal - euclidean distance

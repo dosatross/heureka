@@ -4,8 +4,6 @@ import java.util.ArrayList;
 
 public class Refutation {
 
-    private ArrayList<Clause> KB;
-
     public void solve() {
         Pair<Character,Boolean> a = new Pair<>('a',true);
         Pair<Character,Boolean> anot = new Pair<>('a',false);
@@ -24,7 +22,9 @@ public class Refutation {
         Clause c2 = new Clause(b,c,dnot);
         Clause c3 = new Clause(d);
 
+        ArrayList<Clause> KB;
         KB = new ArrayList<Clause>();
+
         KB.add(c0);
         KB.add(c1);
         KB.add(c2);

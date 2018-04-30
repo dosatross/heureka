@@ -1,8 +1,8 @@
 
 public class Edge<T> {
-    private final int id;
-    private T data;
-    private final Node target;
+    protected final int id;
+    protected T data;
+    protected final Node target;
     protected double cost;
 
     public Edge(int id, T data, Node target,double cost){
